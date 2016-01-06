@@ -1,3 +1,6 @@
+<?php
+include("form.php");
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,7 +27,7 @@
           <li><a href="collapsible.html">Nosotros</a></li>
           <li><a href="collapsible.html">Servicios</a></li>
           <li><a href="collapsible.html">Clientes</a></li>
-          <li><a href="contact.php">Contactos</a></li>
+          <li><a href="collapsible.html">Contactos</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="index.html">Inicio</a></li>
@@ -33,97 +36,114 @@
           <li><a href="collapsible.html">Nosotros</a></li>
           <li><a href="collapsible.html">Servicios</a></li>
           <li><a href="collapsible.html">Clientes</a></li>
-          <li><a href="contact.php">Contactos</a></li>
+          <li><a href="collapsible.html">Contactos</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Image Slider -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="images/placeholder.jpg"> <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="images/placeholder.jpg"> <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="images/placeholder.jpg"> <!-- random image -->
-          <div class="caption right-align">
-            <h3>Right Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="images/placeholder.jpg"> <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-      </ul>
+    <h1 class="center grey-text text-darken-3">Contactos</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card grey darken-4">
+                <div class="card-content grey-text text-lighten-2">
+                  <img class="responsive-img circle" src="images/profile.jpg">
+                  <span class="card-title"></span>
+                  <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col s4">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card grey darken-4">
+                <div class="card-content grey-text text-lighten-2">
+                  <img class="responsive-img circle" src="images/profile.jpg">
+                  <span class="card-title center"></span>
+                  <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col s4">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card grey darken-4">
+                <div class="card-content grey-text text-lighten-2">
+                  <img class="responsive-img circle" src="images/profile.jpg">
+                  <span class="card-title center"></span>
+                  <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
 
   </br>
 
-    <!--3 Same Divs-->
-    <div class="container">
+    <h1 class="center grey-text text-darken-3">Escribanos</h1>
 
-      <div class="row">
+    <div class="row">
+      <div class="center">
+        <?php
 
-        <div class="col s4">
-          <!-- Promo Content 1 goes here -->
-          <img class="responsive-img z-depth-2" src="images/bull.jpg">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum."
-          </p>
-        </div>
-
-        <div class="col s4">
-          <!-- Promo Content 2 goes here -->
-          <img class="responsive-img z-depth-2" src="images/bull.jpg">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum."
-          </p>
-        </div>
-
-        <div class="col s4">
-          <!-- Promo Content 3 goes here -->
-          <img class="responsive-img z-depth-2" src="images/bull.jpg">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum."
-          </p>
-        </div>
-
+          if($error){
+            echo '<div class="red-text text-darken-1">'.addslashes($error).'</div>';
+          }
+          if($success == 1){
+            echo '<div class="green-text text-lighten-1">Su Mensaje Fue Enviado Con Exito</div>';
+          }else if($success == 2){
+            echo '<div class="red-text text-darken-1">Ocurrio Un Error Al Enviar El Mensaje</div>';
+          }
+        ?>
       </div>
-
     </div>
+
+    <div class="container">
+      <form method="post">
+        <div class="row">
+          <div class="input-field col s6 push-s3 center">
+            <input id="name" type="text" class="validate" name="name">
+            <label for="name">Nombre (Requerido)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 push-s3 center">
+            <input id="email" type="email" class="validate" name="email">
+            <label for="email">Email (Requerido)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 push-s3 center">
+            <input id="subject" type="text" class="validate" name="subject">
+            <label for="name">Asunto</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8 push-s3 center">
+            <textarea id="message" class="materialize-textarea" name="message"></textarea>
+            <label for="textarea1">Mensaje</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 push-s3">
+            <button class="btn waves-effect waves-light grey darken-4" type="submit" name="submit" value="submit">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </br>
 
     <!--Footer-->
     <footer class="page-footer grey darken-4">
@@ -165,7 +185,6 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       $(document).ready(function(){
-        $('.slider').slider({full_width: true});
         $(".button-collapse").sideNav();
       });
     </script>

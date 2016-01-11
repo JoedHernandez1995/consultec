@@ -4,7 +4,7 @@ include("form.php");
 <!DOCTYPE html>
 <html>
   <head>
-    <title>INICIO | CONSULTEC</title>
+    <title>CONTACTOS | CONSULTEC</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -16,27 +16,39 @@ include("form.php");
 
   <body>
     <!--NavBar with mobile collapse button-->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!" class="grey-text text-darken-4">Apoyo Gerencial</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="grey-text text-darken-4">Asesorias Financieras</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="grey-text text-darken-4">Asesoria En Imagen Corporativa</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="grey-text text-darken-4">Sistemas De Informacion</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="grey-text text-darken-4">Gobierno Corporativo</a></li>
+    </ul>
     <nav>
       <div class="nav-wrapper grey darken-4">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#!" class="brand-logo">CONSULTEC S de R.L.</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="vision.html">Vision</a></li>
-          <li><a href="mision.html">Mision</a></li>
-          <li><a href="collapsible.html">Nosotros</a></li>
-          <li><a href="collapsible.html">Servicios</a></li>
+          <li><a href="vision.html">Visi&oacuten</a></li>
+          <li><a href="mision.html">Misi&oacuten</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Servicios<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="collapsible.html">Clientes</a></li>
-          <li><a href="collapsible.html">Contactos</a></li>
+          <li><a href="contact.php">Contactos</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="vision.html">Vision</a></li>
-          <li><a href="mision.html">Mision</a></li>
-          <li><a href="collapsible.html">Nosotros</a></li>
+          <li><a href="vision.html">Visi&oacuten</a></li>
+          <li><a href="mision.html">Misi&oacuten</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="collapsible.html">Servicios</a></li>
           <li><a href="collapsible.html">Clientes</a></li>
-          <li><a href="collapsible.html">Contactos</a></li>
+          <li><a href="contact.php">Contactos</a></li>
         </ul>
       </div>
     </nav>

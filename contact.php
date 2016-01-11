@@ -94,7 +94,6 @@ include("form.php");
     <div class="row">
       <div class="center">
         <?php
-
           if($error){
             echo '<div class="red-text text-darken-1">'.addslashes($error).'</div>';
           }
